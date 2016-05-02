@@ -19,10 +19,10 @@ mariadb-galera-data:
     MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   volume_driver: convoy-gluster
   volumes:
-   - :/var/lib/mysql
-   - :/etc/mysql/conf.d
-   - :/docker-entrypoint-initdb.d
-   - :/opt/rancher
+   - /var/lib/mysql
+   - /etc/mysql/conf.d
+   - /docker-entrypoint-initdb.d
+   - /opt/rancher
   command: /bin/true
   labels:
     io.rancher.container.start_once: true
